@@ -5,13 +5,13 @@
 # Copyright (c) 2020 冬ノ夜空
 # 
 
-TARGETS = template.pdf
-SUBDIR = jsarticle
+TARGETS = tornado.pdf
+SUBDIR = Tornado
 
 .PHONY: all
 all: $(TARGETS)
 
-template.pdf: 
+tornado.pdf: 
 	($(MAKE) -C $(SUBDIR))
 
 .PHONY: clean
